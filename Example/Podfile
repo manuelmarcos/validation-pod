@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ValidationPod_Tests' do
+  pod 'ValidationPod', :path => '../'
+  
+  
+end
