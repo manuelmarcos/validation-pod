@@ -5,11 +5,40 @@
 [![License](https://img.shields.io/cocoapods/l/ValidationPod.svg?style=flat)](http://cocoapods.org/pods/ValidationPod)
 [![Platform](https://img.shields.io/cocoapods/p/ValidationPod.svg?style=flat)](http://cocoapods.org/pods/ValidationPod)
 
-## Example
+## Import
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```objective-c
+#import "Validation.h"
+```
 
-## Requirements
+## Usage
+
+```objective-c
+// Check whether a string is valid or not
+if ([Validation isValidString:@"My valid String"]) {
+// Do some something when the string is valid
+}
+
+// Check whether a string is valid or not and if it's empty
+if ([Validation isValidString:@"My valid String" invalidIfEmptyString:YES]) {
+// Do some something when the string is valid and is not empty
+}
+
+// Check whether a dictionary is valid or not
+if ([Validation isValidDictionary:@{@"Hold the" : "Door"}]) {
+// Do some something when the dictionary is valid
+}
+
+// Check whether an array is valid or not
+if ([Validation isValidArray:@[@"Patatas Bravas", @"Paella", @"Chorizo"]]) {
+// Do some something when the array is valid
+}
+
+// Check whether an email is valid or not
+if ([Validation isValidEmail:@"manuel@manuelmarcos.es") {
+// Do some something when the email is valid
+}
+```
 
 ## Installation
 
@@ -22,7 +51,7 @@ pod "ValidationPod"
 
 ## Author
 
-Manuel Marcos Regalado, manuel@ribot.co.uk
+Manuel Marcos Regalado, manuel@manuelmarcos.es
 
 ## License
 

@@ -1,0 +1,16 @@
+PODS:
+  - ValidationPod (0.1.0)
+
+DEPENDENCIES:
+  - ValidationPod (from `../`)
+
+EXTERNAL SOURCES:
+  ValidationPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ValidationPod: 614500b000688e1e28c110d7c98cc02296933bbb
+
+PODFILE CHECKSUM: ef41d1138272aeeceff5be1ebd1827e71079891a
+
+COCOAPODS: 1.0.1

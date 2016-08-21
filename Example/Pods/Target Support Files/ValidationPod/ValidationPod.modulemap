@@ -1,0 +1,6 @@
+framework module ValidationPod {
+  umbrella header "ValidationPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
